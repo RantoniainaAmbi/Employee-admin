@@ -1,25 +1,24 @@
 import React from "react";
-TextField,
-  NumberField,
-  BooleanField,
-  TopToolbar,
-  ListButton,
-  EditButton,
-} from "react-admin";import {
+import {
   Show,
   SimpleShowLayout,
-  
-
-const ShowActions = () => (
-  <TopToolbar>
-    <ListButton label="Retour à la liste" />
-    <EditButton label="Modifier" />
-  </TopToolbar>
-);
+  TextField,
+  NumberField,
+  BooleanField,
+} from "react-admin";
+import { Typography, Divider, Box } from "@mui/material";
+import { InternsByManager } from "./InternsByManager";
+import { DepartmentStats } from "./DepartmentStats";
 
 export const EmployeeShow = () => (
-  <Show actions={<ShowActions />}>
+  <Show>
     <SimpleShowLayout>
+      <Typography
+        variant="h6"
+        sx={{ color: "#333", mb: 1, fontWeight: "bold" }}
+      >
+        Profil de l&apos;Employé
+      </Typography>
       <TextField source="id" label="Identifiant" />
       <TextField source="firstName" label="Prénom" />
       <TextField source="lastName" label="Nom" />
@@ -30,7 +29,22 @@ export const EmployeeShow = () => (
         label="Salaire"
         options={{ style: "currency", currency: "EUR" }}
       />
-      <BooleanField source="active" label="Actif" />
+      <BooleanField source="active" label="Statut Actif" />
+
+      <Box my={3}>
+        <Divider />
+      </Box>
+
+      <Typography
+        variant="h6"
+        sx={{ color: "#333", mb: 1, fontWeight: "bold" }}
+      >
+        Indicateurs Métiers & Relations RH
+      </Typography>
+
+      <DepartmentStats />
+
+      <InternsByManager />
     </SimpleShowLayout>
   </Show>
 );
