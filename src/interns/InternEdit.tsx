@@ -30,7 +30,7 @@ const validateEmail = [
   email("Format d'email invalide"),
 ];
 
-export const InternCreate = () => {
+export const InternEdit = () => {
   const isRemunerated = useWatch({ name: "isRemunerated" });
   const selectedDepartment = useWatch({ name: "department" });
 

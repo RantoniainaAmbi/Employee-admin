@@ -1,16 +1,96 @@
 {
   "employees": [
-    { "id": "1", "firstName": "Alice", "lastName": "Martin", "email": "alice@company.com", "department": "Informatique", "salary": 2800, "active": true },
-    { "id": "2", "firstName": "Bob", "lastName": "Dupont", "email": "bob@company.com", "department": "Marketing", "salary": 2500, "active": false },
-    { "id": "3", "firstName": "Clara", "lastName": "Nguyen", "email": "clara@company.com", "department": "RH", "salary": 2600, "active": true },
-    { "id": "4", "firstName": "David", "lastName": "Lefebvre", "email": "david@company.com", "department": "Finance", "salary": 3100, "active": true },
-    { "id": "5", "firstName": "Eva", "lastName": "Gomez", "email": "eva@company.com", "department": "Informatique", "salary": 2900, "active": true }
+    {
+      "active": true,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "firstName": "Bob",
+      "lastName": "Dupont",
+      "email": "bob@company.com",
+      "department": "Marketing",
+      "salary": 2500,
+      "active": false
+    },
+    {
+      "id": "3",
+      "firstName": "Clara",
+      "lastName": "Nguyen",
+      "email": "clara@company.com",
+      "department": "RH",
+      "salary": 2600,
+      "active": true
+    },
+    {
+      "id": "4",
+      "firstName": "David",
+      "lastName": "Lefebvre",
+      "email": "david@company.com",
+      "department": "Finance",
+      "salary": 3100,
+      "active": true
+    },
+    {
+      "id": "5",
+      "firstName": "Eva",
+      "lastName": "Gomez",
+      "email": "eva@company.com",
+      "department": "Informatique",
+      "salary": 2900,
+      "active": true
+    }
   ],
   "interns": [
-    { "id": "1", "firstName": "Lucas", "lastName": "Rousseau", "email": "lucas@intern.com", "department": "Informatique", "paid": true, "stipend": 600, "managerId": "1" },
-    { "id": "2", "firstName": "Emma", "lastName": "Petit", "email": "emma@intern.com", "department": "Marketing", "paid": false, "stipend": 0, "managerId": "4" },
-    { "id": "3", "firstName": "Thomas", "lastName": "Faure", "email": "thomas@intern.com", "department": "RH", "paid": true, "stipend": 550, "managerId": "3" },
-    { "id": "4", "firstName": "Chloé", "lastName": "Blanc", "email": "chloe@intern.com", "department": "Finance", "paid": true, "stipend": 700, "managerId": "4" },
-    { "id": "5", "firstName": "Hugo", "lastName": "Masson", "email": "hugo@intern.com", "department": "Informatique", "paid": false, "stipend": 0, "managerId": "5" }
+    {
+      "id": "1",
+      "firstName": "Lucas",
+      "lastName": "Rousseau",
+      "email": "lucas@intern.com",
+      "department": "Informatique",
+      "paid": true,
+      "stipend": 600,
+      "managerId": "1"
+    },
+    {
+      "id": "2",
+      "firstName": "Emma",
+      "lastName": "Petit",
+      "email": "emma@intern.com",
+      "department": "Marketing",
+      "paid": false,
+      "stipend": 0,
+      "managerId": "4"
+    },
+    {
+      "id": "3",
+      "firstName": "Thomas",
+      "lastName": "Faure",
+      "email": "thomas@intern.com",
+      "department": "RH",
+      "paid": true,
+      "stipend": 550,
+      "managerId": "3"
+    },
+    {
+      "id": "4",
+      "firstName": "Chloé",
+      "lastName": "Blanc",
+      "email": "chloe@intern.com",
+      "department": "Finance",
+      "paid": true,
+      "stipend": 700,
+      "managerId": "4"
+    },
+    {
+      "id": "5",
+      "firstName": "Hugo",
+      "lastName": "Masson",
+      "email": "hugo@intern.com",
+      "department": "Informatique",
+      "paid": false,
+      "stipend": 0,
+      "managerId": "5"
+    }
   ]
 }
