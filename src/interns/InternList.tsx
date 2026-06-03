@@ -9,11 +9,13 @@ import {
   DeleteButton,
   TextInput,
   SelectInput,
+  TopToolbar,
+  ExportButton,
 } from "react-admin";
+import { QuickInternCreate } from "./QuickInternCreate";
 
 const internFilters = [
   <TextInput label="Rechercher" source="q" alwaysOn key="q" />,
-
   <SelectInput
     label="Département"
     source="department"
@@ -25,7 +27,6 @@ const internFilters = [
       { id: "Finance", name: "Finance" },
     ]}
   />,
-
   <SelectInput
     label="Payé"
     source="paid"
@@ -37,8 +38,15 @@ const internFilters = [
   />,
 ];
 
+const InternListActions = () => (
+  <TopToolbar>
+    <QuickInternCreate />
+    <ExportButton />
+  </TopToolbar>
+);
+
 export const InternList = () => (
-  <List filters={internFilters} perPage={5}>
+  <List filters={internFilters} actions={<InternListActions />} perPage={5}>
     <Datagrid rowClick="show">
       <TextField source="firstName" label="Prénom" />
       <TextField source="lastName" label="Nom" />
@@ -51,7 +59,7 @@ export const InternList = () => (
       />
 
       <FunctionField
-        label="salaire"
+        label="Gratification"
         render={(record) =>
           record?.paid && record.stipend
             ? new Intl.NumberFormat("fr-FR", {

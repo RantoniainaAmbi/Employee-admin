@@ -10,12 +10,13 @@ import { InternList } from "./interns/InternList";
 import { InternCreate } from "./interns/InternCreate";
 import { InternShow } from "./interns/InternShow";
 import { InternEdit } from "./interns/InternEdit";
-import { Layout } from "./Layout";
+import { Dashboard } from "./Dashboard";
 
 const dataProvider = jsonServerProvider("http://localhost:3002");
 
 const App = () => (
-  <Admin dataProvider={dataProvider} layout={Layout}>
+  <Admin dataProvider={dataProvider} dashboard={Dashboard}>
+    {" "}
     <Resource
       name="employees"
       list={EmployeeList}
