@@ -1,0 +1,43 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Alice",
+      "lastName": "Martin",
+      "email": "alice@company.com",
+      "department": "Informatique",
+      "salary": "2 800 €",
+      "active": "Oui"
+    },
+    {
+      "id": 2,
+      "firstName": "Bob",
+      "lastName": "Dupont",
+      "email": "bob@company.com",
+      "department": "Marketing",
+      "salary": "2 500 €",
+      "active": "Oui"
+    },
+    {
+      "id": 3,
+      "firstName": "Clara",
+      "lastName": "Nguyen",
+      "email": "clara@company.com",
+      "department": "RH",
+      "salary": "2 600 €",
+      "active": "Non"
+    }
+  ],
+  "interns": [
+    {
+      "id": 1,
+      "firstName": "David",
+      "lastName": "Smith",
+      "email": "david@company.com",
+      "department": "Informatique",
+      "isPaid": "Oui",
+      "salary": "1 000 €",
+      "mentor": "Alice Martin"
+    }
+  ]
+}
