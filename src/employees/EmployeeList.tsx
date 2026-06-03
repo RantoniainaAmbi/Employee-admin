@@ -10,10 +10,10 @@ import {
   TextInput,
   SelectInput,
 } from "react-admin";
+import { QuickStatusToggle } from "./QuickStatusToggle";
 
 const employeeFilters = [
   <TextInput label="Rechercher" source="q" alwaysOn key="q" />,
-
   <SelectInput
     label="Département"
     source="department"
@@ -40,6 +40,9 @@ export const EmployeeList = () => (
         options={{ style: "currency", currency: "EUR" }}
       />
       <BooleanField source="active" label="Actif" />
+
+      <QuickStatusToggle />
+
       <EditButton />
       <DeleteButton />
     </Datagrid>
